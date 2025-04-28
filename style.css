@@ -1,0 +1,417 @@
+/* Estilo principal del tema TVT Rock */
+body {
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #f0f0f0;
+    font-family: 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #222;
+  }
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: background 0.3s ease;
+    padding: 1rem 2rem;
+  }
+  
+  .sticky-header.scrolled {
+    background: #000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  .full-width-hero {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+  }
+  .hero-logo {
+    width: 120px;
+    height: 120px;
+    animation: pulse 6s ease-in-out infinite;
+    transform: translateY(-150px); /* más arriba todavía */
+    z-index: 2;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  } 
+  .contact-list li {
+    margin-bottom: 0.5rem;
+  }
+    
+  .main-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .main-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .main-menu li a:hover {
+    color: #ff2f2f;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #222;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #ff2f2f;
+    margin-bottom: 1rem;
+    font-family:  'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    color: #ff2f2f;
+    font-family:  'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  
+  .hero img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  footer {
+    background: #000;
+    color: #999;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    height: 380px;
+  }
+  
+.wpforms-form input[type="text"],
+.wpforms-form input[type="email"],
+.wpforms-form textarea {
+  background: #111;
+  border: 1px solid #444;
+  color: #eee;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.wpforms-form label {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.wpforms-submit {
+  background: #ff2f2f !important;
+  color: #fff !important;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.wpforms-submit:hover {
+  background: #cc1a1a !important;
+}
+/* Estilizado oscuro para formularios WPForms */
+.wpforms-form input[type="text"],
+.wpforms-form input[type="email"],
+.wpforms-form input[type="url"],
+.wpforms-form input[type="tel"],
+.wpforms-form textarea {
+  background: #111;
+  color: #eee;
+  border: 1px solid #555;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.wpforms-form input::placeholder,
+.wpforms-form textarea::placeholder {
+  color: #888;
+}
+
+.wpforms-form label {
+  color: #f0f0f0 !important;
+  font-weight: bold;
+}
+
+.wpforms-form .wpforms-field-description,
+.wpforms-form .wpforms-required-label {
+  color: #f55 !important;
+}
+
+.wpforms-submit {
+  background: #ff2f2f !important;
+  color: #fff !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wpforms-submit:hover {
+  background: #c92222 !important;
+}
+
+.wpforms-field-container .wpforms-field-name input {
+  color: #eee !important;
+}
+.wpforms-form {
+    max-width: 800px;
+    margin: auto;
+  }
+  .wpforms-field-name input::placeholder {
+    color: #888 !important;
+  }
+  
+  .wpforms-field-name .wpforms-field-label {
+    color: #f0f0f0 !important;
+  }
+
+  /* Links generales en modo oscuro */
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    color: #ff2f2f;
+    text-decoration: underline;
+  }
+
+  .social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .social-links li a {
+    color: #f0f0f0;
+    font-size: 1.2rem;
+  }
+  
+  .social-links li a i {
+    margin-right: 0.5rem;
+  }
+  section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #streaming h2 {
+    font-size: 2rem;
+    color: #ff2f2f;
+    margin-bottom: 1rem;
+    font-family:  'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .icon-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 6rem;
+    position: relative;
+    top: 60px; 
+  }
+  
+  
+  .icon-btn {
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.2rem;
+    border-radius: 100%;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    box-shadow: 0 0 10px #00000088;
+  }
+  
+  .icon-btn:hover {
+    transform: scale(1.2);
+    background: #ff2f2f;
+    color: #fff;
+  }
+  #hero-streaming {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+  }
+  
+section#hero-streaming {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-bottom: none !important;
+  }
+  #hero-streaming.section {
+    padding: 0 !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  
+  
+  #hero-streaming .hero-overlay {
+    width: 100%;
+    max-width: none;
+  }
+  
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .hero-overlay img.hero-logo {
+    width: 160px;
+    height: auto;
+    animation: pulse 2s ease-in-out infinite;
+    margin-top: -80px; /* Sube el logo */
+  }
+  @keyframes pulse {
+    0%, 100% {
+      transform: translateY(-150px) scale(1);
+    }
+    50% {
+      transform: translateY(-150px) scale(1.05);
+    }
+  }
+  
+  .hero-title {
+    font-size: 6rem;
+    color: #ff2f2f;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+  }
+  .icon-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+    top: 160px;        /* estaba en 60px, subimos bastante más */
+    margin-top: 8rem;  /* adicional */
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .icon-btn {
+    background: #111;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1.2rem;
+    border-radius: 100%;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-btn:hover {
+    background: #ff2f2f;
+    transform: scale(1.15);
+  }
+  section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .footer-social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-social-links li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer-social-links li a i {
+    margin-right: 0.4rem;
+    font-size: 1rem;
+  }
+  
